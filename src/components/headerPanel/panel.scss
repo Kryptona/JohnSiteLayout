@@ -1,0 +1,15 @@
+@import "src/styles/default";
+
+.root {
+  .container {
+    display: flex;
+    justify-content: flex-end;
+    span{
+      padding: 0 20px;
+      font-family: $font-family;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 29px;
+    }
+  }
+}
