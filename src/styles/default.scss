@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&display=swap');
 
 $font-family: 'Heebo';
+$primary-bt-color: #FF6464;
 
 $minWidth: 320px;
 $maxWidth: 1152;
@@ -11,7 +12,7 @@ $md3: 767.98;
 $md4: 479.98;
 
 .containerHeader {
-  width: 946px;
+  max-width: 946px;
   margin: 0 auto;
   .container {
 
