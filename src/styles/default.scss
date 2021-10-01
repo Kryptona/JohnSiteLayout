@@ -2,19 +2,32 @@
 
 $font-family: 'Heebo';
 $primary-bt-color: #FF6464;
+$font-color: #21243D;
+
+$max-width-panel-container: 1032px;
+$max-width-container: 860px;
 
 $minWidth: 320px;
-$maxWidth: 1152;
-$max-width-container: 856;
-$md1: $max-width-container + 12;
-$md2: 991.98;
-$md3: 767.98;
-$md4: 479.98;
+$maxWidth: 1152px;
+
+$md1: $max-width-panel-container + 12px;
+$md2: 991.98px;
+$md3: 767.98px;
+$md4: 479.98px;
+
+%default_panel_container {
+  max-width: $max-width-panel-container;
+  margin: 0 auto;
+}
+%default_container {
+  max-width: $max-width-container;
+  margin: 0 auto;
+}
 
 .containerHeader {
-  max-width: 946px;
-  margin: 0 auto;
-  .container {
-
-  }
+  //max-width: 946px;
+  //margin: 0 auto;
+  //.container {
+  //
+  //}
 }

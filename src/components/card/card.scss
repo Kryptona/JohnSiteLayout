@@ -1,0 +1,35 @@
+@import "src/styles/default";
+
+.root {
+  width: 420px;
+  height: 300px;
+  background-color: white;
+  border-radius: 4px;
+
+  .text_container{
+    font-family: $font-family;
+    color: $font-color;
+    padding: 0 20px;
+    .header {
+      font-weight: bold;
+      font-size: 26px;
+      line-height: 38px;
+      padding: 20px 0;
+
+    }
+    .info{
+      font-size: 18px;
+      line-height: 26px;
+      padding-bottom: 10px;
+      span{
+        padding: 0 10px;
+      }
+    }
+
+    .desc{
+      font-size: 16px;
+      line-height: 23px;
+    }
+  }
+
+}

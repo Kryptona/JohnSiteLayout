@@ -9,7 +9,7 @@ const Introduce = () => {
             <div className={styles.container}>
                 <div className={styles.text}>
                     <div className={styles.intro}>
-                        Hi, I am John,
+                        Hi, I am John, <br/>
                         Creative Technologist
                     </div>
                     <div className={styles.desc}>
