@@ -4,6 +4,7 @@ import Posts from "./components/recent_posts/Posts";
 import Panel from "./components/headerPanel/Panel";
 import Introduce from "./components/introduce/Introduce";
 import Works from "./components/featured_works/Works";
+import Footer from "./components/footer/Footer";
 
 const App = () => {
     return (
@@ -12,6 +13,7 @@ const App = () => {
             <Introduce/>
             <Posts/>
             <Works/>
+            <Footer/>
             <div className={styles.container}>
 
             </div>
