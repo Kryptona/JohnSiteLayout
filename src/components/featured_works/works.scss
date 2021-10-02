@@ -1,6 +1,11 @@
-.root{
-  max
-  .container{
+@import "src/styles/default";
 
+.root {
+  @extend %default_container;
+  .header{
+    font-size: 22px;
+    line-height: 60px;
+    font-family: $font-family;
+    color: $font-color;
   }
 }

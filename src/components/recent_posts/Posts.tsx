@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from "../card/Card";
+import PostCard from "../post_card/PostCard";
 import styles from "./posts.scss";
 
 const Posts = () => {
@@ -8,16 +8,16 @@ const Posts = () => {
             <div className={styles.container}>
                 <span className={styles.header}>Recent posts</span>
                 <div className={styles.card_container}>
-                    <Card
+                    <PostCard
                         header={"Making a design system from scratch"}
                         date={"12 Feb 2020"}
                         info={"Design, Pattern"}
                         desc={"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."}
                     />
-                    <Card header={"Creating pixel perfect icons in Figma"}
-                          date={"12 Feb 2020"}
-                          info={"Figma, Icon Design"}
-                          desc={"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."}/>
+                    <PostCard header={"Creating pixel perfect icons in Figma"}
+                              date={"12 Feb 2020"}
+                              info={"Figma, Icon Design"}
+                              desc={"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."}/>
                 </div>
 
             </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from "./card.scss";
+import styles from "./post_card.scss";
 
 interface Props {
     readonly header: string;
@@ -9,7 +9,7 @@ interface Props {
 }
 
 // eslint-disable-next-line react/prop-types
-const Card: React.FC<Props> = ({header, date, info, desc}) => {
+const PostCard: React.FC<Props> = ({header, date, info, desc}) => {
     return (
         <div className={styles.root}>
             <div className={styles.text_container}>
@@ -22,4 +22,4 @@ const Card: React.FC<Props> = ({header, date, info, desc}) => {
     );
 };
 
-export default Card;
+export default PostCard;
