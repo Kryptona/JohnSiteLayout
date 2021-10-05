@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from "./avatar.scss";
-import avatar from "../../img/avatar.png";
-import avatar_bg from "../../img/avatar_bg.png";
+import avatar from "../../../img/avatar.png";
+import avatar_bg from "../../../img/avatar_bg.png";
 
 const Avatar = () => {
     return (

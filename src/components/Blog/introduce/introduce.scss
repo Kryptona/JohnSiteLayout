@@ -1,10 +1,16 @@
-@import "src/styles/default";
+@import "../../../styles/default";
 
 .root {
   @extend %default_container;
   display: flex;
   padding-top: 140px;
   justify-content: space-between;
+
+  @media (max-width: 720px) {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    text-align: center;
+  }
 
   .container {
     color: $font-color;
@@ -41,9 +47,5 @@
       line-height: 29px;
       margin-bottom: 70px;
     }
-  }
-
-  .photo {
-
   }
 }

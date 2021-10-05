@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from "./works.scss";
 import WorkCard from "../work_card/WorkCard";
-import designing_dashboard from "../../img/designing_dashboard.png";
-import vibrant from "../../img/vibrant_portraits_of_2020.png";
-import days from "../../img/36_days_of_malayalam_type.png";
+import designing_dashboard from "../../../img/designing_dashboard.png";
+import vibrant from "../../../img/vibrant_portraits_of_2020.png";
+import days from "../../../img/36_days_of_malayalam_type.png";
 
 const WorksContainer = () => {
     return (
