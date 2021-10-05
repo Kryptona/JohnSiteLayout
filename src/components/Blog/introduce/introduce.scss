@@ -3,10 +3,11 @@
 .root {
   @extend %default_container;
   display: flex;
-  padding-top: 140px;
+  padding: 140px 16px 0;
   justify-content: space-between;
 
   @media (max-width: 720px) {
+    padding: 4vh 16px 0;
     flex-wrap: wrap-reverse;
     justify-content: center;
     text-align: center;

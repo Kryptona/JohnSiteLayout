@@ -2,7 +2,12 @@
 
 .root {
   @extend %default_container;
-  .header{
+
+  .header {
+    @media (max-width: 570px) {
+      margin-bottom: -20px;
+      text-align: center;
+    }
     font-size: 22px;
     line-height: 60px;
     font-family: $font-family;

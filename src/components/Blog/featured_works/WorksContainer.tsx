@@ -11,21 +11,21 @@ const WorksContainer = () => {
             <div className={styles.header}>Featured works</div>
             <div className={styles.container}>
                 <WorkCard
-                    img={<img src={designing_dashboard}/>}
+                    imgSrc={designing_dashboard}
                     header={"Designing Dashboards"}
                     year={"2020"}
                     type={"Dashboard"}
                     desc={"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."}
                 />
                 <WorkCard
-                    img={<img src={vibrant}/>}
+                    imgSrc={vibrant}
                     header={"Vibrant Portraits of 2020"}
                     year={"2018"}
                     type={"Illustration"}
                     desc={"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."}
                 />
                 <WorkCard
-                    img={<img src={days}/>}
+                    imgSrc={days}
                     header={"36 Days of Malayalam type"}
                     year={"2018"}
                     type={"Typography"}

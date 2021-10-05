@@ -1,15 +1,22 @@
 @import "../../../styles/default";
 
+$max_width: 570px;
+
 .root {
-  padding: 23px 0;
+  padding: 20px 0;
   @extend %default_container;
   display: flex;
   flex-wrap: nowrap;
   border-bottom: 1px solid #E0E0E0;
 
   .image {
+    flex-shrink: 0;
     width: 250px;
     height: 182px;
+    img{
+      width: 100%;
+      height: 100%;
+    }
   }
 
   .container {
@@ -21,7 +28,7 @@
     .header {
       font-weight: bold;
       font-size: 30px;
-      line-height: 44px;
+      //line-height: 44px;
     }
 
     .year_type_container {
@@ -39,7 +46,7 @@
         font-size: 18px;
       }
 
-      .type{
+      .type {
         padding-left: 26px;
         color: #8695A4;
         font-size: 20px;
@@ -47,9 +54,26 @@
       }
     }
 
-    .desc{
+    .desc {
       font-size: 16px;
       line-height: 23px;
     }
   }
+}
+
+@media (max-width: $max_width) {
+  .root {
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .image {
+      width: 90vw;
+      max-width: 420px;
+      height: auto;
+      padding: 0 16px;
+      margin-bottom: 20px;
+    }
+
+  }
+
 }
