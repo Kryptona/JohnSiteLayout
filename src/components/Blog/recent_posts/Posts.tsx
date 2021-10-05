@@ -6,7 +6,7 @@ const Posts = () => {
     return (
         <div className={styles.root}>
             <div className={styles.container}>
-                <span className={styles.header}>Recent posts</span>
+                <div className={styles.header}>Recent posts</div>
                 <div className={styles.card_container}>
                     <PostCard
                         header={"Making a design system from scratch"}

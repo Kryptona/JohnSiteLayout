@@ -1,5 +1,7 @@
 @import "../../../styles/default";
 
+$max_width: 570px;
+
 .root {
   width: 100%;
   background-color: #EDF7FA;
@@ -10,12 +12,15 @@
     padding: 16px;
 
     .header {
-      display: inline-block;
       margin-bottom: 16px;
       color: $font-color;
       font-family: Heebo;
       font-size: 22px;
       line-height: 60px;
+
+      @media (max-width: $max_width) {
+        text-align: center;
+      }
     }
 
     .card_container {
@@ -23,7 +28,7 @@
       flex-wrap: nowrap;
       justify-content: space-between;
 
-      @media (max-width: 570px) {
+      @media (max-width: $max_width) {
         display: flex;
         flex-wrap: wrap-reverse;
         justify-content: center;
@@ -32,7 +37,7 @@
         }
       }
 
-      @media (min-width: 571px){
+      @media (min-width: $max_width + 1) {
         & > *:not(:first-child) {
           margin-left: 16px;
         }
