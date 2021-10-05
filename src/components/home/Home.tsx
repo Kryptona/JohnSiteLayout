@@ -4,16 +4,16 @@ import React, {Component} from "react";
 import {Link} from "react-router-dom"
 
 import styles from "../../styles/default.scss";
-import Panel from "./headerPanel/Panel";
+import Panel from "../shared/headerPanel/Panel";
 import Introduce from "./introduce/Introduce";
 import Posts from "./recent_posts/Posts";
 import WorksContainer from "./featured_works/WorksContainer";
-import Footer from "./footer/Footer";
+import Footer from "../shared/footer/Footer";
 
-export default class Blog extends Component {
+export default class Home extends Component {
     render() {
         return (
-            <div className={styles.containerHeader}>
+            <div>
                 <Panel/>
                 <Introduce/>
                 <Posts/>

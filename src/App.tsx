@@ -8,8 +8,9 @@ import {
     Link, Redirect
 } from "react-router-dom";
 
-import Blog from "./components/Blog/Blog";
-import Works from "./components/Works/Works";
+import Home from "./components/home/Home";
+import Works from "./components/works/Works";
+import Blog from "./components/blog/Blog";
 
 
 export default function App() {
@@ -17,8 +18,9 @@ export default function App() {
     return (
         <Switch>
             <Route path="/blog"> <Blog/> </Route>
+            <Route exact path="/"> <Home/> </Route>
             <Route path="/works"> <Works/> </Route>
-            <Redirect to={'/blog'}/>
+            <Redirect to={'/'}/>
         </Switch>
     );
 }

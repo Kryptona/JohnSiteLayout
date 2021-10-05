@@ -1,0 +1,73 @@
+@import "../../../styles/default";
+
+$max_width: 620px;
+
+.root {
+  margin: 32px 0;
+  font-family: $font-family;
+  color: $font-color;
+  border-bottom: 1px solid #E0E0E0;
+
+  @media (max-width: $max_width) {
+    margin: 18px 0;
+  }
+
+  .header {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 44px;
+    margin-bottom: 16px;
+
+    @media (max-width: $max_width) {
+      font-weight: 500;
+      font-size: 26px;
+      line-height: 38px;
+    }
+  }
+
+  .date_info {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 16px;
+
+    .date {
+      font-size: 20px;
+      line-height: 29px;
+
+      @media (max-width: $max_width) {
+        font-size: 16px;
+        line-height: 23px;
+      }
+    }
+
+    .info {
+      font-size: 20px;
+      line-height: 29px;
+      color: #8695A4;
+
+      @media (max-width: $max_width) {
+        font-size: 16px;
+        line-height: 23px;
+      }
+    }
+
+    span {
+      margin: 0 20px;
+      font-size: 20px;
+      color: $font-color;
+
+      @media (max-width: $max_width) {
+        font-size: 12px;
+        line-height: 23px;
+      }
+    }
+  }
+
+  .desc {
+    margin-bottom: 30px;
+    @media(max-width: $max_width) {
+      font-size: 16px;
+      line-height: 23px;
+    }
+  }
+}
