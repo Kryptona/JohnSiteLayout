@@ -6,10 +6,12 @@
 
   .container {
     @extend %default_container;
-    height: 400px;
+    min-height: 400px;
+    padding: 16px;
 
-    .header{
-      padding: 10px 0 25px 0;
+    .header {
+      display: inline-block;
+      margin-bottom: 16px;
       color: $font-color;
       font-family: Heebo;
       font-size: 22px;
@@ -20,6 +22,22 @@
       display: flex;
       flex-wrap: nowrap;
       justify-content: space-between;
+
+      @media (max-width: 570px) {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        & > *:not(:first-child) {
+          margin-bottom: 16px;
+        }
+      }
+
+      @media (min-width: 571px){
+        & > *:not(:first-child) {
+          margin-left: 16px;
+        }
+      }
+
     }
   }
 }
