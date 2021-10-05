@@ -5,7 +5,7 @@ import designing_dashboard from "../../img/designing_dashboard.png";
 import vibrant from "../../img/vibrant_portraits_of_2020.png";
 import days from "../../img/36_days_of_malayalam_type.png";
 
-const Works = () => {
+const WorksContainer = () => {
     return (
         <div className={styles.root}>
             <div className={styles.header}>Featured works</div>
@@ -36,4 +36,4 @@ const Works = () => {
     );
 };
 
-export default Works;
+export default WorksContainer;

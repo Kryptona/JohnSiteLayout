@@ -1,25 +1,24 @@
-import React from 'react';
-import styles from '/src/styles/default.scss'
-import Posts from "./components/recent_posts/Posts";
-import Panel from "./components/headerPanel/Panel";
-import Introduce from "./components/introduce/Introduce";
-import Works from "./components/featured_works/Works";
-import Footer from "./components/footer/Footer";
+import React, {Component} from 'react';
 
-const App = () => {
+import {
+    BrowserRouter as Router,
+    Route,
+    Switch,
+    Link, Redirect
+} from "react-router-dom";
+
+import Blog from "./components/Blog/Blog";
+import Works from "./components/Works/Works";
+
+
+export default function App() {
+
     return (
-        <div className={styles.containerHeader}>
-            <Panel/>
-            <Introduce/>
-            <Posts/>
-            <Works/>
-            <Footer/>
-            <div className={styles.container}>
-
-            </div>
-
-        </div>
+        <Switch>
+            <Route path="/blog"> <Blog/> </Route>
+            <Route path="/works"> <Works/> </Route>
+            <Redirect to={'/blog'}/>
+        </Switch>
     );
-};
+}
 
-export default App;

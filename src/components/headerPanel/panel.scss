@@ -7,12 +7,18 @@
     display: flex;
     justify-content: flex-end;
 
-    span {
-      padding: 0 20px;
+    a {
+      padding: 10px 20px;
       font-family: $font-family;
       font-weight: 500;
       font-size: 20px;
       line-height: 29px;
+      text-decoration: none;
+      color: $font-color;
+    }
+
+    a:hover {
+      background-color: rgba(1, 1, 1, 0.06);
     }
   }
 }
