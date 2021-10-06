@@ -19,7 +19,6 @@ const WorkCard: React.FC<Props> = ({id, imgSrc, header, year, type, desc}) => {
             </div>
             <div className={styles.container}>
                 <Link to={`/works/${id}`}>{header}</Link>
-                <div className={styles.header}>{header}</div>
                 <div className={styles.year_type_container}>
                     <div className={styles.year}>{year}</div>
                     <div className={styles.type}>{type}</div>

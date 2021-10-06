@@ -20,5 +20,9 @@
     a:hover {
       background-color: rgba(1, 1, 1, 0.06);
     }
+
+    .current_navlink {
+      color: $primary-bt-color;
+    }
   }
 }

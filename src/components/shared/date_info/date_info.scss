@@ -1,0 +1,8 @@
+@import "../../../styles/default";
+
+$date_color: #FF7C7C;
+$info_color: #21243D;
+
+.year_info_container {
+  @include date_info($date_color, $info_color);
+}

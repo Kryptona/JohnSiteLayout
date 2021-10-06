@@ -1,14 +1,14 @@
 import React from 'react';
 import styles from "./panel.scss"
-import {Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 
 const Panel = () => {
     return (
         <div className={styles.root}>
             <div className={styles.container}>
-                <Link to="/works">Works</Link>
-                <Link to="/blog">Blog</Link>
-                <Link to="/contact">Contact</Link>
+                <NavLink activeClassName={styles.current_navlink} to="/works">Works</NavLink>
+                <NavLink activeClassName={styles.current_navlink} to="/blog">Blog</NavLink>
+                <NavLink activeClassName={styles.current_navlink} to="/contact">Contact</NavLink>
             </div>
         </div>
     );

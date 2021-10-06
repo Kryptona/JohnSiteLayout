@@ -42,3 +42,28 @@ $default_padding_container: 0 16px;
     font-size: 30px;
   }
 }
+
+@mixin date_info($year_color, $text_color) {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 16px 0;
+  font-family: $font-family;
+
+  .year {
+    background-color: $year_color;
+    border-radius: 16px;
+    color: white;
+    width: 62px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 18px;
+  }
+
+  .type {
+    padding-left: 26px;
+    color: $text_color;
+    font-size: 20px;
+    line-height: 29px;
+  }
+}
+

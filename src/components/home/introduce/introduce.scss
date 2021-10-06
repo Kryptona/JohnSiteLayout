@@ -47,6 +47,10 @@
       font-size: 20px;
       line-height: 29px;
       margin-bottom: 70px;
+
+      &:hover{
+        background-color: darken($primary-bt-color, 10%);
+      }
     }
   }
 }

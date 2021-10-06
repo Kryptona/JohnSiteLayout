@@ -1,0 +1,9 @@
+@import "../../../styles/default";
+
+.root{
+  padding: $default_padding_container;
+  @extend %default_container;
+  .header{
+    @include default_header(620px);
+  }
+}
