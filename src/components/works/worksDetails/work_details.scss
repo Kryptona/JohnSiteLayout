@@ -1,9 +1,50 @@
 @import "../../../styles/default";
 
-.root{
+//$container: 680px;
+
+.root {
   padding: $default_padding_container;
-  @extend %default_container;
-  .header{
-    @include default_header(620px);
+
+  .container {
+    @extend %default_container;
+    font-family: $font-family;
+    color: $font-color;
+
+    .header {
+      @include default_header(620px);
+      max-width: 580px;
+    }
+
+    .desc {
+      max-width: $max-width-container;
+      font-size: 16px;
+      line-height: 23px;
+    }
+
+    .image {
+      flex-shrink: 1;
+      max-width: $max-width-container;
+      height: auto;
+      margin: 20px 0;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .heading1{
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 40px;
+      margin-top: 30px;
+    }
+    .heading2{
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 40px;
+      margin-top: 0;
+    }
   }
+
 }
