@@ -25,6 +25,10 @@ $max_width: 570px;
     color: $font-color;
     font-family: Heebo;
 
+    @media (max-width: $max_width){
+      padding: 0;
+    }
+
     .header {
       font-weight: bold;
       font-size: 30px;
@@ -75,5 +79,13 @@ $max_width: 570px;
     }
 
   }
+}
 
+@media (max-width: 360px){
+  .root{
+    .image{
+      min-width: 324px;
+      height: auto;
+    }
+  }
 }

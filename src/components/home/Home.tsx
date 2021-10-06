@@ -1,14 +1,10 @@
 import React, {Component} from "react";
 
-// import {map} from 'underscore'
-import {Link} from "react-router-dom"
-
-import styles from "../../styles/default.scss";
 import Panel from "../shared/headerPanel/Panel";
 import Introduce from "./introduce/Introduce";
 import Posts from "./recent_posts/Posts";
-import WorksContainer from "./featured_works/WorksContainer";
 import Footer from "../shared/footer/Footer";
+import FeaturedWorks from "./featured_works/FeaturedWorks";
 
 export default class Home extends Component {
     render() {
@@ -17,7 +13,7 @@ export default class Home extends Component {
                 <Panel/>
                 <Introduce/>
                 <Posts/>
-                <WorksContainer/>
+                <FeaturedWorks/>
                 <Footer/>
             </div>
         );

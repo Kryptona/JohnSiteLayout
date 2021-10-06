@@ -7,5 +7,8 @@ $max_width: 620px;
 
   .header {
     @include default_header($max_width);
+    @media (max-width: $max_width) {
+      margin-bottom: 0;
+    }
   }
 }

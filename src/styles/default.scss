@@ -15,11 +15,30 @@ $md2: 991.98px;
 $md3: 767.98px;
 $md4: 479.98px;
 
+$default_padding_container: 0 16px;
+
 %default_panel_container {
   max-width: $max-width-panel-container;
   margin: 0 auto;
 }
+
 %default_container {
   max-width: $max-width-container;
   margin: 0 auto;
+}
+
+@mixin default_header($max_width) {
+  margin-bottom: 23px;
+  font-family: $font-family;
+  color: $font-color;
+  font-size: 44px;
+  line-height: 60px;
+  font-weight: bold;
+  margin-top: 110px;
+  @media (max-width: $max_width) {
+    margin-top: 15px;
+    font-weight: bold;
+    line-height: 60px;
+    font-size: 30px;
+  }
 }
