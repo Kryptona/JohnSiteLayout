@@ -29,10 +29,13 @@ $max_width: 570px;
       padding: 0;
     }
 
+    a{
+      font-weight: bold;
+      font-size: 30px;
+    }
     .header {
       font-weight: bold;
       font-size: 30px;
-      //line-height: 44px;
     }
 
     .year_type_container {

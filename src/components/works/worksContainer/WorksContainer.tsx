@@ -13,6 +13,7 @@ const WorksContainer = () => {
             <div className={styles.header}>Work</div>
             <div className={styles.cardContainer}>
                 <WorkCard
+                    id={"1"}
                     imgSrc={designing_dashboard}
                     header={"Designing Dashboards"}
                     year={"2020"}
@@ -20,6 +21,7 @@ const WorksContainer = () => {
                     desc={"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."}
                 />
                 <WorkCard
+                    id={"2"}
                     imgSrc={vibrant}
                     header={"Vibrant Portraits of 2020"}
                     year={"2018"}
@@ -27,6 +29,7 @@ const WorksContainer = () => {
                     desc={"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."}
                 />
                 <WorkCard
+                    id={"3"}
                     imgSrc={days}
                     header={"36 Days of Malayalam type"}
                     year={"2018"}
@@ -34,6 +37,7 @@ const WorksContainer = () => {
                     desc={"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."}
                 />
                 <WorkCard
+                    id={"4"}
                     imgSrc={components}
                     header={"Components"}
                     year={"2018"}

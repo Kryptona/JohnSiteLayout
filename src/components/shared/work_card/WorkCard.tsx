@@ -1,7 +1,9 @@
 import React from 'react';
 import styles from "./work_card.scss";
+import {Link} from "react-router-dom";
 
 interface Props {
+    readonly id: string;
     readonly imgSrc: string;
     readonly header: string;
     readonly year: string;
@@ -9,13 +11,14 @@ interface Props {
     readonly desc: string;
 }
 
-const WorkCard: React.FC<Props> = ({imgSrc, header, year, type, desc}) => {
+const WorkCard: React.FC<Props> = ({id, imgSrc, header, year, type, desc}) => {
     return (
         <div className={styles.root}>
             <div className={styles.image}>
                 <img src={imgSrc}/>
             </div>
             <div className={styles.container}>
+                <Link to={`/works/${id}`}>{header}</Link>
                 <div className={styles.header}>{header}</div>
                 <div className={styles.year_type_container}>
                     <div className={styles.year}>{year}</div>

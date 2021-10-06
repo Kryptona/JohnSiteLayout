@@ -11,15 +11,17 @@ import {
 import Home from "./components/home/Home";
 import Works from "./components/works/Works";
 import Blog from "./components/blog/Blog";
+import WorkDetails from "./components/works/worksDetails/WorkDetails";
 
 
 export default function App() {
 
     return (
         <Switch>
-            <Route path="/blog"> <Blog/> </Route>
             <Route exact path="/"> <Home/> </Route>
-            <Route path="/works"> <Works/> </Route>
+            <Route path="/blog"> <Blog/> </Route>
+            <Route exact path="/works"> <Works/> </Route>
+            <Route path="/works/:id"> <WorkDetails/> </Route>
             <Redirect to={'/'}/>
         </Switch>
     );
